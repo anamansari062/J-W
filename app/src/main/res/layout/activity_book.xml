@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp1"
+    tools:context=".Book">
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="335dp"
+        android:layout_marginTop="-50dp"
+        android:background="#8C6C3E"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="BOOK A ROOM"
+            android:textColor="#FFFFFFFF"
+            android:textSize="34sp"
+            android:typeface="serif" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-in"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-out"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/date_in_t"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFFFF" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/date_out_t"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFFFF" />
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="99dp"
+                android:layout_height="50dp"
+                android:text="Rooms:"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/rmin"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="-"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:backgroundTint="#F44336" />
+
+            <EditText
+                android:id="@+id/room"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/rplus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="+"
+                app:backgroundTint="#F44336" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adults:"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/amin"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="-"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:backgroundTint="#F44336" />
+
+            <EditText
+                android:id="@+id/adult"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/aplus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="+"
+                app:backgroundTint="#F44336" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Children:"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cmin"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="-"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:backgroundTint="#F44336" />
+
+            <EditText
+                android:id="@+id/child"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/cplus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="+"
+                app:backgroundTint="#F44336" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="364dp"
+        android:layout_height="57dp"
+        android:text="FIND"
+        android:textSize="20sp"
+        android:typeface="serif"
+        app:backgroundTint="#8C6C3E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
